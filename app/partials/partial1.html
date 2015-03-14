@@ -1,0 +1,22 @@
+<div>
+
+    <p>{{ game.user.name }}</p>
+
+
+    <p>
+        <label>Level</label>
+        <span>{{ game.user.exp.level }}</span>
+
+    </p>
+    <p>
+        <label>Experience</label>
+        <span>{{game.user.exp.xp}} ({{game.user.exp.max}})</span>
+    </p>
+    <progressbar animate="false" value="game.user.exp.progressValue">
+        <span style="color:black; white-space:nowrap;">{{game.user.exp.xp}} / {{game.user.exp.max}}</span>
+    </progressbar>
+
+
+    <br />
+    <button ng-click="game.addExp()">Add XP</button>
+</div>

@@ -1,0 +1,1 @@
+!function(){"use strict";function e(e,t){e.hashPrefix("!"),t.when("/",{templateUrl:"./partials/partial1.html",controller:"MainController"}).otherwise({redirectTo:"/"})}function t(e){e.test="Testing..."}angular.module("SampleApp",["ngRoute","ngAnimate"]).config(e).controller("MainController",t),e.$inject=["$locationProvider","$routeProvider"],t.$inject=["$scope"]}();
